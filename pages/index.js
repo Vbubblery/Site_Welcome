@@ -1,8 +1,9 @@
-import Layout from '../components/MyLayout.js';
+import Layout from '../components/MyLayout';
+import Fullpage from '../components/Fullpage';
 import React from 'react';
 import dynamic from 'next/dynamic'
-
-const Fullpage = dynamic(() => import('../components/Fullpage'),{ssr: false})
+import NoSsr from '@material-ui/core/NoSsr';
+//const Fullpage = dynamic(() => import('../components/Fullpage'),{ssr: false})
 
 class Index extends React.Component{
   constructor(props){
@@ -13,7 +14,9 @@ class Index extends React.Component{
     return (
       <React.Fragment>
       <Layout>
-        <Fullpage />
+        <NoSsr>
+          <Fullpage />
+        </NoSsr>
       </Layout>
       </React.Fragment>
     )

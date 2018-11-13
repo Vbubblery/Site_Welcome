@@ -43,7 +43,7 @@ class Header extends React.Component {
             <Typography variant="h6" color="inherit" noWrap className={this.classes.toolbarTitle}>
               <img src={z} style={{width:'140px',height:'50px'}}/>
             </Typography>
-            <Button href='http://blog.example.com'>My Blog</Button>
+            <Button href='https://blog.4pro.me'>My Blog</Button>
             <Button color="primary" href="https://www.linkedin.com/in/juncheng-zhou-620657149/">
               <FaLinkedin size={20} />LinkedIn
             </Button>
